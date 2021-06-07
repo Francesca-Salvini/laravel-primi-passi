@@ -9,6 +9,11 @@
 <body>
 
     <h1> {{ $hello_world }} Welcome in Laravel</h1>
+
+    <a href="{{ route("link") }}"> Laravel</a>
+    <a href="{{ route("about") }}">Chi siamo</a>
+    <a href="{{ route("contacts") }}">Contatti</a>
+
     
 </body>
 </html>

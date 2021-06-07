@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Homepage
 Route::get('/', function () {
 
     $hello = [
@@ -21,3 +22,20 @@ Route::get('/', function () {
 
     return view('homepage', $hello);
 })->name("homepage");
+
+//Link al sito Laravel
+Route::get('/website', function () {
+
+    return view('website');
+})->name("link");
+
+//Link alla section "chi siamo"
+Route::get('/chi-siamo', function () {
+
+    return view('chi-siamo');
+})->name("about");
+
+Route::get('/contatti', function () {
+
+    return view('contatti');
+})->name("contacts");
